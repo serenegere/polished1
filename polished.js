@@ -138,10 +138,10 @@ function handleShiftPress(event) {
      document.addEventListener('keydown', handleShiftPress);
      document.addEventListener('keyup', handleShiftRelease);
 
-     function appendToDisplay(character) {
+    function appendToDisplay(character) {
        document.execCommand('insertText', false, character);
-       document.querySelectorAll('.keyboard-btn').blur();
      }
+     function blur(){document.querySelectorAll('.keyboard-btn').blur();}
      function erase(){
        document.execCommand('delete', false);
      }
